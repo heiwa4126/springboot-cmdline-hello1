@@ -25,3 +25,12 @@ java -Dtest.msg=xxxx -jar hello1-0.0.1-SNAPSHOT.jar
 - 環境変数とオプションで異なるプロファイルを指定するとどうなるか? 
   
 とかも試してみて。
+
+
+# 参考
+
+- [7\.3\. Profiles](https://docs.spring.io/spring-boot/docs/2.5.5/reference/htmlsingle/#features.profiles)
+- [12\.2\.6\. Set the Active Spring Profiles](https://docs.spring.io/spring-boot/docs/2.5.5/reference/htmlsingle/#features.profiles)
+- [7\.3\. プロファイル](https://spring.pleiades.io/spring-boot/docs/2.5.4/reference/htmlsingle/#features.profiles) - 日本語
+- [12\.2\.6\. アクティブ Spring プロファイルを設定する](https://spring.pleiades.io/spring-boot/docs/2.5.4/reference/htmlsingle/#features.profiles) - 日本語
+
