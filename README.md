@@ -9,6 +9,7 @@ Spring Bootでコマンドラインアプリのサンプル。加えてプロフ
 ```
 で `build/libs/hello1-0.0.1-SNAPSHOT.jar` にFat JARができるので、
 以下のように試す。
+(GitHubのreleasesにもjar置いときます)
 
 内蔵のプロファイルはdev(default)とprod
 
@@ -16,7 +17,11 @@ Spring Bootでコマンドラインアプリのサンプル。加えてプロフ
 java -jar build/libs/hello1-0.0.1-SNAPSHOT.jar test1 test2
 java -Dspring.profiles.active=prod -jar build/libs/hello1-0.0.1-SNAPSHOT.jar test3 test4
 SPRING_PROFILES_ACTIVE=prod java -jar build/libs/hello1-0.0.1-SNAPSHOT.jar test5 test6
-java -jar build/libs/hello1-0.0.1-SNAPSHOT.jar test7 test8 --spring.profiles.active=prod　
+java -jar build/libs/hello1-0.0.1-SNAPSHOT.jar test7 test8 --spring.profiles.active=prod
+java -Dtest.msg=xxxx -jar hello1-0.0.1-SNAPSHOT.jar
 ```
 
-存在しないプロファイルを指定するとどうなるか? とかも試してみて。
+- 存在しないプロファイルを指定するとどうなるか? 
+- 環境変数とオプションで異なるプロファイルを指定するとどうなるか? 
+  
+とかも試してみて。
